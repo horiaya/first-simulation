@@ -17,10 +17,6 @@ class BreakTimeController extends Controller
         //$oldtimein = Attendance::where('user_id',$user->id)->latest()->first();
         //$oldDay = '';
 
-        //当日の勤怠を取得
-        //$today = Carbon::today();
-        //$posts = BreakTime::whereDate('created_at', $today)->get();
-        //return view('attendance',['posts'=>$posts]);
 
         $now = Carbon::now();
         $attendance_id = Auth::id();
